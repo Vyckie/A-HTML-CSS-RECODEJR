@@ -1,17 +1,253 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Home</title>
+    <style>
+        
+        header{
+            
+            width: 100%;          
+            padding: 10px 0px 10px 0px;
+            margin:auto;
+            background-color: rgb(172, 228, 205);
+            
+        }
+        a{
+            cursor: pointer;
+        }
+        span{
+            margin:auto;
+        }
+        .config{
+            width: 20px;
+            cursor: pointer;
+
+        }
+        .sacola{
+            width: 15%;
+            cursor: pointer;
+        }
+        div{
+            width: 20%;      
+        }
+        
+        .nav{
+            width:100%;
+            padding: 10px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+        .logoMarca{
+            width: 40%;
+            margin-left: 50px;
+        }
+        input{
+            width: 80%;
+            height: 40%;
+        }
+        button{
+            background-color: white;
+            cursor: pointer;   
+            border-radius: 5px;
+            border-color:rgb(70, 175, 179); 
+            margin:auto;        
+        }     
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            width: 100%;
+        }
+        li{
+            width: 100%;
+           
+        }
+        
+        section{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 90%;
+            margin: 5%;
+        }
+        main > .container {
+            flex: 1 1 200px;
+            margin: 10px;
+        }
+        .container{
+            background-color: white;
+            box-shadow: 0px 2px 15px #63616156;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            border-radius: 8px;
+            align-items: center;
+            cursor: pointer;
+        }
+        
+        .produto{
+            max-width: 50%;
+            display: block;
+            
+           
+        }
+
+        footer{
+            background-color: white;
+            display:flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+        .footer{
+            
+            padding: 1%;
+            width: 50%;
+            margin:auto;
+            text-align: center;
+            color:rgb(70, 175, 179);
+            
+        }
+        .socialMedia{
+            width: 5%;
+            margin: auto ;
+            
+        }
+        .logo{
+            width: 30%;
+        }
+
+    </style>
 </head>
 <body>
     <header>
-
+        <section>
+            <span>
+                <img class="config" src="perfil-de-usuario.png">
+               <a>Meu Nome</a> 
+            </span>
+            <span>
+                <img class="config" src="configuracoes-da-web.png">
+                <a>Sair</a>
+            </span>            
+        </section>
+        <hr/>
+        <section>
+                <div ><img class="logoMarca" src="shopping-cart.png"></div>
+            
+                <div class="nav">
+                <nav>
+                    <input placeholder="Pesquise por produtos, marcas e lojas">
+                    <button>
+                        Pesquisar
+                    </button>
+                </nav>
+                    <ul>
+                        <li><a>Categorias </a></li>
+                        <li><a>Promoções </a></li>
+                        <li><a>Frete Grátis </a></li>
+                        <li><a>Cupons </a></li>
+                        <li><img class="sacola" src="bolsa-de-compras.png"></li>
+                    </ul>
+                </div>
+                
+        </section>
+         <hr>      
     </header>
-    <footer>
+    
+    <main>
         
+        <div class="container">
+            <img class="produto" src="tenis.png">
+            R$ 100,00
+        </div>
+        <div class="container">
+            <img class="produto" src="relogio.png">
+            R$ 500,00
+        </div>
+        <div class="container">
+            <img class="produto" src="livro.png">
+            R$ 200,00
+        </div>
+        <div class="container">
+            <img class="produto" src="celular.png">
+            R$ 1000,00
+        </div>
+        <div class="container">
+            <img class="produto" src="tenis.png">
+            R$ 100,00
+        </div>
+        <div class="container">
+            <img class="produto" src="relogio.png">
+            R$ 500,00
+        </div>
+        <div class="container">
+            <img class="produto" src="livro.png">
+            R$ 200,00
+        </div>
+        <div class="container">
+            <img class="produto" src="celular.png">
+            R$ 1000,00
+        </div>
+        <div class="container">
+            <img class="produto" src="tenis.png">
+            R$ 100,00
+        </div>
+        <div class="container">
+            <img class="produto" src="relogio.png">
+            R$ 500,00
+        </div>
+        <div class="container">
+            <img class="produto" src="livro.png">
+            R$ 200,00
+        </div>
+        <div class="container">
+            <img class="produto" src="celular.png">
+            R$ 1000,00
+        </div>
+        <div class="container">
+            <img class="produto" src="tenis.png">
+            R$ 100,00
+        </div>
+        <div class="container">
+            <img class="produto" src="relogio.png">
+            R$ 500,00
+        </div>
+        <div class="container">
+            <img class="produto" src="livro.png">
+            R$ 200,00
+        </div>
+        <div class="container">
+            <img class="produto" src="celular.png">
+            R$ 1000,00
+        </div>
+    </main>
+
+    <section>
+        <button>Ver mais</button>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <img class="socialMedia" src="whatsapp.png">
+            <img class="socialMedia" src="instagram.png">
+            <img class="socialMedia" src="facebook.png">
+        </div>
+        <div class="footer">
+            <img class="logo" src="logo-recode.png">
+        </div>
+        <div class="footer">
+            <h6>
+                Versão 1.1 by Vyckie
+            </h6>
     </footer>
 </body>
 </html>
