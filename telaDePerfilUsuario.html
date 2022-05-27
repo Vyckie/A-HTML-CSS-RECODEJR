@@ -1,25 +1,279 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Perfil</title>
     <style>
+        header{
+            
+            width: 100%;          
+            padding: 10px 0px 10px 0px;
+            margin:auto;
+            background-color: rgb(172, 228, 205);
+            
+        }
+        a{
+            cursor: pointer;
+        }
+        span{
+            margin:auto;
+        }
+        .config{
+            width: 20px;
+            cursor: pointer;
 
+        }
+        .sacola{
+            width: 15%;
+            cursor: pointer;
+        }
+        div{
+            width: 20%;      
+        }
+        
+        .nav{
+            width:100%;
+            padding: 10px;
+        }
+        nav{
+            display: flex;
+            flex-direction: row;
+        }
+        .logoMarca{
+            width: 40%;
+            margin-left: 50px;
+        }
+        input{
+            width: 80%;
+            height: 40%;
+        }
+        button{
+            background-color: white;
+            cursor: pointer;   
+            border-radius: 5px;
+            border-color:rgb(70, 175, 179); 
+            margin:auto;        
+        }     
+        ul{
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+            width: 100%;
+        }
+        li{
+            width: 100%;
+           
+        }
+        
+        section{
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+
+        main{
+            width: 100%;
+            
+        }
+        .container{
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            margin:auto;
+            background-color: rgb(248, 245, 245);
+            
+
+        }
+        .container > span{
+            flex: 1 1 400px;
+            margin: 10px;
+            
+        }
+        h2{
+            text-align: center;
+        }
+        hr{
+            width: 80%;
+        }
+        
+        
+
+
+        footer{
+            background-color: white;
+            display:flex;
+            flex-direction: row;
+            padding: 20px;
+        }
+        .footer{
+            
+            padding: 1%;
+            width: 50%;
+            margin:auto;
+            text-align: center;
+            color:rgb(70, 175, 179);
+            
+        }
+        .socialMedia{
+            width: 5%;
+            margin: auto ;
+            
+        }
+        .logo{
+            width: 30%;
+        }
     </style>
 </head>
 <body>
     <header>
-
+        <section>
+            <span>
+                <img class="config" src="perfil-de-usuario.png">
+               <a>Perfil do Usuario</a> 
+            </span>
+            <span>
+                <img class="config" src="configuracoes-da-web.png">
+                <a>Sair</a>
+            </span>            
+        </section>
+        <hr/>
+        <section>
+                <div ><img class="logoMarca" src="shopping-cart.png"></div>
+            
+                <div class="nav">
+                <nav>
+                    <input placeholder="Pesquise por produtos, marcas e lojas">
+                    <button>
+                        Pesquisar
+                    </button>
+                </nav>
+                    <ul>
+                        <li><a>Categorias </a></li>
+                        <li><a>Promoções </a></li>
+                        <li><a>Frete Grátis </a></li>
+                        <li><a>Cupons </a></li>
+                        <li><img class="sacola" src="bolsa-de-compras.png"></li>
+                    </ul>
+                </div>
+                
+        </section>
+         <hr>      
     </header>
     
     <main>
 
+        <h2>MEUS DADOS</h2>
+        <div class="container">
+            <span>
+                <h4>NOME COMPLETO</h4>
+                Vyckie Santos
+            </span>
+            <span>
+                <h4>CPF</h4>
+                709.456.001-98
+            </span>
+            <span>
+                <h4>EMAIL</h4>
+                contato@gmail.com
+            </span>
+            <span>
+                <h4>GÊNERO</h4>
+                Feminino
+            </span>
+            <span>
+                <h4>DATA DE NASCIMENTO</h4>
+                12/12/1999
+            </span>
+            <span>
+                <h4>NÚMERO DE TELEFONE</h4>
+                (75) 98891-6262
+            </span>
+            
+        </div>
+        <div class="container">
+            <button>ALTERAR DADOS</button>
+        </div>
+        
+        <hr>
+
+        <h2>MEUS PEDIDOS</h2>
+        <div class="container">
+            <span>
+                <h4>REALIZADO EM:</h4>
+                26/04/2022
+            </span>
+            <span>
+                <h4>FORMA DE PAGAMENTO</h4>
+                Boleto Bancário
+                R$ 500,00 em 1x
+                Sem juros
+            </span>
+            <span>
+                <h4>PEDIDO</h4>
+                V24095035CKA-01
+                <a>pedir novamente</a>
+            </span>
+            <span>
+                <h4>SUBTOTAL</h4>
+                R$ 0,00
+            </span>
+            <span>
+                <h4>DESCONTOS</h4>
+                R$ -0,00
+            </span>
+            <span>
+                <h4>FRETE</h4>
+                R$ 0,00
+            </span>
+            <span>
+                <h4>ITEM</h4>
+                <img src="relogio.png">
+            </span>
+
+        </div>
+        <div class="container">
+            <button>VER NOTA FISCAL</button>
+            <button>TROCA E DEVOLUÇÃO</button>
+        </div>
+
+
+        <hr>
+
+        <h2>MEUS ENDEREÇOS</h2>
+        <div class="container">
+            <span>
+                <h4>NOME</h4>
+                Vyckie Santos
+                <h4>RUA</h4>
+                Rua Monsenhor Gilberto, 122
+                <h4>COMPLEMENTO</h4>
+                Apartamento
+                <h4>CEP</h4>
+                444333-44
+            </span>
+        </div>
+        <div class="container">
+            <button>ALTERAR ENDEREÇO</button>
+        </div>
+        
     </main>
 
     <footer>
-        
+        <div class="footer">
+            <img class="socialMedia" src="whatsapp.png">
+            <img class="socialMedia" src="instagram.png">
+            <img class="socialMedia" src="facebook.png">
+        </div>
+        <div class="footer">
+            <img class="logo" src="logo-recode.png">
+        </div>
+        <div class="footer">
+            <h6>
+                Versão 1.1 by Vyckie
+            </h6>
     </footer>
 </body>
 </html>
